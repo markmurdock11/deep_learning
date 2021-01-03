@@ -42,6 +42,6 @@ Use the above to answer the following:
 >*The closing price predictor model also tracked the actual value better too.*
 
 > Which window size works best for the model?
->*After messing around with the models, I believe that a window size of 0-3 days is best. The smaller the window, the better the model is at predicting, be it FNG or Closing. This makes since to me, considering the simplicity of the models. 
+>*After messing around with the models, I believe that a window size of 0-3 days is best. The smaller the window, the better the model is at predicting, be it FNG or Closing. This makes since to me, considering the simplicity of the models.* 
 - - -
 
