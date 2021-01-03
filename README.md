@@ -6,23 +6,6 @@ Due to the volatility of cryptocurrency speculation, investors will often try to
 
 In this assignment, you will use deep learning recurrent neural networks to model bitcoin closing prices. One model will use the FNG indicators to predict the closing price while the second model will use a window of closing prices to predict the nth closing price.
 
-You will need to:
-
-1. [Prepare the data for training and testing](#prepare-the-data-for-training-and-testing)
-2. [Build and train custom LSTM RNNs](#build-and-train-custom-lstm-rnns)
-3. [Evaluate the performance of each model](#evaluate-the-performance-of-each-model)
-
-- - -
-
-### Files
-
-[Closing Prices Starter Notebook](Starter_Code/lstm_stock_predictor_closing.ipynb)
-
-[FNG Starter Notebook](Starter_Code/lstm_stock_predictor_fng.ipynb)
-
-- - -
-
-## Instructions
 
 ### Prepare the data for training and testing
 
@@ -51,39 +34,14 @@ Finally, use the testing data to evaluate each model and compare the performance
 Use the above to answer the following:
 
 > Which model has a lower loss?
->
+
+> *The closing price predictor model had a much lower loss than the FNG model. This means the closing price predictos did a better job of predicting the expected outcome.*
+
 > Which model tracks the actual values better over time?
->
+
+>*The closing price predictor model also tracked the actual value better too.*
+
 > Which window size works best for the model?
-
+>*After messing around with the models, I believe that a window size of 0-3 days is best. The smaller the window, the better the model is at predicting, be it FNG or Closing. This makes since to me, considering the simplicity of the models. 
 - - -
 
-### Resources
-
-[Keras Sequential Model Guide](https://keras.io/getting-started/sequential-model-guide/)
-
-[Illustrated Guide to LSTMs](https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21)
-
-[Stanford's RNN Cheatsheet](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-recurrent-neural-networks)
-
-- - -
-
-### Hints and Considerations
-
-Experiment with the model architecture and parameters to see which provides the best results, but be sure to use the same architecture and parameters when comparing each model.
-
-For training, use at least 10 estimators for both models.
-
-- - -
-
-### Submission
-
-* Create Jupyter Notebooks for the homework and host the notebooks on GitHub.
-
-* Include a Markdown that summarizes your homework and include this report in your GitHub repository.
-
-* Submit the link to your GitHub project to Bootcamp Spot.
-
-- - -
-
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
